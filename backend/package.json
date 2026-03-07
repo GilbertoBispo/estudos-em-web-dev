@@ -1,0 +1,25 @@
+{
+  "name": "backend-lista-tarefas",
+  "version": "1.0.0",
+  "description": "API para sistema de lista de tarefas simples",
+  "keywords": [
+    "node",
+    "express",
+    "backend"
+  ],
+  "homepage": "https://github.com/GilbertoBispo/estudos-em-web-dev#readme",
+  "bugs": {
+    "url": "https://github.com/GilbertoBispo/estudos-em-web-dev/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GilbertoBispo/estudos-em-web-dev.git"
+  },
+  "license": "ISC",
+  "author": "Gilberto Bispo",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
