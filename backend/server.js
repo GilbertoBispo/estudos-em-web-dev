@@ -61,6 +61,7 @@ app.post("/", (req, res) => {
             console.log(err)
         }
     });
+    // redireciona o usuário para a mesma página após o submit
     res.redirect("/");
 });
 
