@@ -7,6 +7,17 @@ const port = 5000;
 const frontendPort = 5173;
 
 // nós tambem instalamos o cors e passamos a ele o endereço do nosso site. Ele serve para permitir com que o frontend faça requisições à nossa API. OBS: a porta especificada é do frontend, já que é ele que estamos autorizando a fazer requisições à esta API.
+
+app.use((req, res, next) => {
+    try {
+        console.log("Executado");
+    } catch (error) {
+        console.log(error);
+    }
+
+    next();
+});
+
 app.use(cors({
     origin: `http://localhost:${frontendPort}`
 }));
