@@ -3,9 +3,11 @@ import { pessoas } from "./schema.js";
 import { db } from "./db.js"
 
 const router = Router();
-
-router.get("/ola", (req, res) => {
-    res.status(200).json({message: "olá, mundo!"});
+    
+router.get("/pessoas", async (req, res) => {
+    // busca todos os registros da tabela "pessoas"
+    const listaPessoas = await db.select().from(pessoas);
+    res.status(200).json(listaPessoas);
 });
 
 router.post("/adicionar", async (req, res) => {
